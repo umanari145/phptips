@@ -1,6 +1,5 @@
 <?php
 
-
 $arr = [100,200,300];
 
 $arr2 = array_reduce($arr,function ($res, $val){
@@ -79,4 +78,3 @@ array_map(function ($val){echo $val['name'] . " " .$val['age']. "\n";}, $arr);
 //yuusuke 25
 //kazumi 30
 //satoshi 45
-
