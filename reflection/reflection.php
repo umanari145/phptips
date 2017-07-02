@@ -2,8 +2,7 @@
 
 namespace animal;
 
-require_once 'Cat.php';
-require_once 'Dog.php';
+require_once dirname(__FILE__) .'/ClassLoader.php';
 
 $classes = [
     'animal\Cat',

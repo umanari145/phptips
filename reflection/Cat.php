@@ -2,8 +2,6 @@
 
 namespace animal;
 
-require_once 'Animal.php';
-
 class Cat extends Animal{
 
     private $name = 'tama';
