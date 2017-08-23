@@ -1,5 +1,7 @@
 <?php
 
+ini_set('date.timezone', 'Asia/Tokyo');
+
 echo "インスタンス作成";
 
 $day1 = new DateTime();
@@ -15,6 +17,13 @@ echo "yyyy-mm-dd形式の読み取り";
 $day1 = new DateTime('1980-05-13');
 var_dump($day1);
 
+echo "月末や先週なども定義できる";
+$day1 = new DateTime('last day of this month');
+var_dump($day1);
+
+$day1 = new DateTime('last week');
+var_dump($day1);
+
 echo "年月日自分秒を独自に設定";
 
 $day1 = new DateTime();
@@ -25,6 +34,13 @@ echo "任意フォーマットへの出力(個別の年月日などもこれで�
 
 $day1 = new DateTime();
 echo $day1->format('Ymd H:i:s');
+echo "\n";
+
+echo "dateと同じ表記ができるので月末表記も簡単\n";
+echo $day1->format('t');
+echo "\n";
+
+
 
 echo "加算・減算(strtotimeと一緒)";
 
