@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * http://hamuhamu.hatenablog.jp/entry/2015/08/17/020308
+ *
+ */
+
 class Cat{
     public function meow()
     {
