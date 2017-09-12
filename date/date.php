@@ -13,9 +13,13 @@ $day1 = new DateTime('1980/05/13');
 var_dump($day1);
 
 echo "yyyy-mm-dd形式の読み取り";
-
 $day1 = new DateTime('1980-05-13');
 var_dump($day1);
+
+echo "タイムスタンプ";
+$day1 = new DateTime('1980-05-13');
+echo $day1->getTimestamp();
+echo "\n";
 
 echo "月末や先週なども定義できる";
 $day1 = new DateTime('last day of this month');
