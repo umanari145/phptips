@@ -11,6 +11,9 @@ $sca::staticMethod1();//3
 $sca->instanceMethod1();//4;
 $scb->instanceMethod1();//5;
 
+//クラスからインスタンス変数はよべない　エラーになる
+//$sca::instanceMethod1();//4;
+
 $sca->instanceMethod2();//1;
 $scb->instanceMethod2();//1;
 $sca->instanceMethod2();//2;
@@ -32,6 +35,13 @@ class SampleClass
         echo $num .PHP_EOL;
         //下記はエラーになる。staticメソッドからインスタンス変数は呼べない(クラスからインスタンスは呼べない)
         //echo $this->num2;
+
+        //クラスメソッドからインスタンスメソッドはよべない エラーになる
+        //$this->instanceMethod1();
+    }
+
+    public static function staticMethod2(){
+        echo 'static method2'. PHP_EOL;
     }
 
     public function instanceMethod1(){
@@ -41,16 +51,22 @@ class SampleClass
         self::$num1 = $num;
 
         echo $num .PHP_EOL;
-        //下記の処理はundefinedになる
+        //下記の処理はundefinedになる $this->num1 とself::$num1は当然別物!
         //echo $this->num1 . PHP_EOL;
         echo $this->num2 . PHP_EOL;//空白
+
+        //通常はstaticはこの呼び方
+        self::staticMethod2();
+        //この方法でも呼べる
+        $this->staticMethod2();
     }
 
     public function instanceMethod2(){
-        //インスタンスメソッドからクラス変数は呼べる
+        //インスタンスメソッドからクラス変数は呼べる(通常の使い方)
         $num = $this->num2;
         $num++;
         $this->num2 = $num;
         echo $num .PHP_EOL;
     }
+
 }
