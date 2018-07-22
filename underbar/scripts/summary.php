@@ -5,7 +5,7 @@ require __DIR__ . '/../vendor/autoload.php';
 use Underbar\ArrayImpl as _; 
 
 
-//Œö®
+//å…¬å¼
 //http://emonkak.github.io/underbar.php/#groupBy    
 
 $arr=[
@@ -16,9 +16,9 @@ $arr=[
 	["name"=>"jirou ",  "domain"=>"hotmail.com", "age"=>"9","pref"=>"tokyo"]
     ];
 
-#’Šo
+#æŠ½å‡º
 #
-#ğŒ
+#æ¡ä»¶
 $arr2 =  _::filter( $arr , function($ele) {
     return $ele["age"] >=20;
 });
@@ -59,7 +59,7 @@ $arr2 =  _::filter( $arr , function($ele) {
 //  }
 //}
 
-#where‹å
+#whereå¥
 $arr2 = _::where($arr, ['pref' => "chiba"]);
 //var_dump( $arr2 );
 //array(2) {
@@ -103,14 +103,14 @@ $arr2 = _::pluck($arr, 'domain');
 //}
 
 
-#WŒv
+#é›†è¨ˆ
 
-#Œ§‚²‚Æ‚ÉƒOƒ‹[ƒsƒ“ƒOgroupby 
+#çœŒã”ã¨ã«ã‚°ãƒ«ãƒ¼ãƒ”ãƒ³ã‚°groupby 
 $arr2 = _::groupBy( $arr, function($ele) { return $ele["pref"]; } );
 
 //var_dump( $arr2 );
 
-//Œ§‚²‚Æ‚ÉƒOƒ‹[ƒsƒ“ƒO
+//çœŒã”ã¨ã«ã‚°ãƒ«ãƒ¼ãƒ”ãƒ³ã‚°
 //array(3) {
 //  ["chiba"]=>
 //  array(2) {
@@ -181,7 +181,7 @@ $arr2 = _::groupBy( $arr, function($ele) { return $ele["pref"]; } );
 //https://quartet-communications.com/info/topics/17506
 
 
-//d•¡‚ª‚È‚¢ƒpƒ^[ƒ“‚Íg‚¦‚é
+//é‡è¤‡ãŒãªã„ãƒ‘ã‚¿ãƒ¼ãƒ³ã¯ä½¿ãˆã‚‹
 $arr3 = _::indexBy( $arr , 'pref');
 
 //var_dump( $arr3 );
@@ -223,7 +223,7 @@ $arr3 = _::indexBy( $arr , 'pref');
 //}
 //
 //
-//Œ§•Ê‚Ì”—Ê
+//çœŒåˆ¥ã®æ•°é‡
 
 $arr4 = _::countBy( $arr ,function( $ele ){ 
     return ( $ele["age"]  >= 20 ) ? "child": " adult ";
@@ -239,7 +239,7 @@ $arr4 = _::countBy( $arr ,function( $ele ){
 //}
 //
 //
-//­‚µ•¡G‚Èƒpƒ^[ƒ“
+//å°‘ã—è¤‡é›‘ãªãƒ‘ã‚¿ãƒ¼ãƒ³
 $arr5 = _::countBy( $arr ,function( $ele ){ 
     $age; 
     if( $ele["age"]  < 10 ){
@@ -266,7 +266,7 @@ $arr5 = _::countBy( $arr ,function( $ele ){
 //  int(1)
 //}
 //
-//–¼‘OAƒƒ‹ƒAƒh(‹ó”’œ‹{ƒhƒƒCƒ“)‚Ì”z—ñ‚ğì‚é
+//åå‰ã€ãƒ¡ãƒ«ã‚¢ãƒ‰(ç©ºç™½é™¤å»ï¼‹ãƒ‰ãƒ¡ã‚¤ãƒ³)ã®é…åˆ—ã‚’ä½œã‚‹
 $arr2 = _::map( $arr, function($ele) {  
     $ele["email"] = trim( $ele["name"] ) ."@". $ele["domain"];
     return $ele;
@@ -345,7 +345,7 @@ $arr2 = _::map( $arr, function($ele) {
 //
 
 
-#30ÎˆÈã‚Ìƒƒ‹ƒAƒh(–¼‘O‚Ì‹ó”’‚ğíœ)‚ğì‚é
+#30æ­³ä»¥ä¸Šã®ãƒ¡ãƒ«ã‚¢ãƒ‰(åå‰ã®ç©ºç™½ã‚’å‰Šé™¤)ã‚’ä½œã‚‹
 $arr3 = _::chain($arr)
     ->filter( function( $ele ) { return $ele["age"] >= 30; })
     ->map( function( $ele ) { 
