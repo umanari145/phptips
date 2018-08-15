@@ -17,6 +17,10 @@ PHPに関わる小ネタ
     - SampleClass.php クラス変数とインスタンス変数の使い分け
     - SampleClass2.php マジックメソッド__callの使い方
 
+- curl
+    - curl.php curlコマンドでのPOST
+
+
 - date/date.php dateTimeを使った日付の処理全般
 
 - di Diのサンプル
