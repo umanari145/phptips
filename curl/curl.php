@@ -18,12 +18,11 @@ curl_setopt_array($ch, [
 ]);
 
 $response = curl_exec($ch);
-$response2 = strip_tags($response);
 $header_size = curl_getinfo($ch, CURLINFO_HEADER_SIZE);
 $header = substr($response, 0, $header_size);
 //response出力
 var_dump($header);
 //responseの形を出力
-var_dump($response2);
+var_dump($response);
 
 curl_close($ch);
