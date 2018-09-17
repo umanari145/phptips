@@ -1,0 +1,12 @@
+{
+    "name": "matsumoto/phptips",
+    "authors": [
+        {
+            "name": "Norio",
+            "email": "umanari145@gmail.com"
+        }
+    ],
+    "require": {
+        "fzaninotto/faker": "^1.8"
+    }
+}
