@@ -31,6 +31,7 @@ PHPに関わる小ネタ
 
 - error エラーハンドリング
     - errorCatch.php エラーハンドリングの具体例
+    - exception.php 例外キャッチに関して 
 
 - namespace namespaceを使ったサンプル
 
