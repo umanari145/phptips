@@ -34,8 +34,9 @@ PHPに関わる小ネタ
     - exception.php 例外キャッチに関して
 
 - encoding 文字コードがらみ
-    - sample_encoding.php mb_convert_encodingの検出に関して
-    - sample.txt cp932で保存したファイル
+    - mb_convert_encoding.php mb_convert_encodingの検出に関して
+    - cp932_text.txt cp932で保存したファイル
+    - utf8_text.txt utf8で保存したファイル
 
 - namespace namespaceを使ったサンプル
 
