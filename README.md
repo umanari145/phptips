@@ -31,7 +31,11 @@ PHPに関わる小ネタ
 
 - error エラーハンドリング
     - errorCatch.php エラーハンドリングの具体例
-    - exception.php 例外キャッチに関して 
+    - exception.php 例外キャッチに関して
+
+- encoding 文字コードがらみ
+    - sample_encoding.php mb_convert_encodingの検出に関して
+    - sample.txt cp932で保存したファイル
 
 - namespace namespaceを使ったサンプル
 
