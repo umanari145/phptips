@@ -38,6 +38,10 @@ PHPに関わる小ネタ
     - cp932_text.txt cp932で保存したファイル
     - utf8_text.txt utf8で保存したファイル
 
+- filepointer ファイルポインタに関して
+    - file_pointer.php ファイルポインタの検出に関して
+    - sample_text.txt サンプルテキスト
+
 - namespace namespaceを使ったサンプル
 
 - pdflib pdfの活用   
