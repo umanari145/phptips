@@ -37,3 +37,6 @@ rewind($fp);
 var_dump(ftell($fp));
 #先頭に戻す
 #int(0)
+$res = fgets($fp);
+#先頭に戻っている
+var_dump($res);
