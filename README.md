@@ -42,6 +42,14 @@ PHPに関わる小ネタ
     - file_pointer.php ファイルポインタの検出に関して
     - sample_text.txt サンプルテキスト
 
+- import インポート系のスクリプト(CSV→DBなど)に関して
+    - make_update_sql.php update文作成
+        ```
+        ex.
+        php make_update_sql.php -i"入力ファイル名" -o"出力ファイル名" -k"updateのkey" -t"テーブル名"
+        ```
+    - sample.csv サンプルCSV
+
 - namespace namespaceを使ったサンプル
 
 - pdflib pdfの活用   
