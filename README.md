@@ -48,6 +48,11 @@ PHPに関わる小ネタ
         ex.
         php make_update_sql.php -i"入力ファイル名" -o"出力ファイル名" -k"updateのkey" -t"テーブル名"
         ```
+    - make_insert_sql.php insert文作成
+        ```
+        ex.
+        php make_insert_sql.php -i"入力ファイル名" -o"出力ファイル名" -t"テーブル名"
+        ```        
     - sample.csv サンプルCSV
 
 - namespace namespaceを使ったサンプル
