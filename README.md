@@ -20,6 +20,7 @@ PHPに関わる小ネタ
 - curl
     - curl.php curlコマンドでのPOST
     - file_get_contents_.php file_get_contentsを使ったPOST
+    - #他にguzzleなどHTTPクライアントを使った方がいいかも。。。
 
 
 - date/date.php dateTimeを使った日付の処理全般
