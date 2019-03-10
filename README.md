@@ -68,5 +68,10 @@ PHPに関わる小ネタ
     - ClassLoader.php autoloadの作成
     - reflection.php 実際の動的クラスの呼び出し
 
+- trait traitの活用(外部実装)
+    - samplClass.php traitを受ける側の通常の野良クラス
+    - sampleProgram.php sampleClassを呼び出して実行するクラス
+    - sameplTrait.php Traitを実行するクラス
+
 - underbar
     - scripts/summary.php underbar.phpを使ったサンプル
