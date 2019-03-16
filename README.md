@@ -33,6 +33,7 @@ PHPに関わる小ネタ
 - error エラーハンドリング
     - errorCatch.php エラーハンドリングの具体例
     - exception.php 例外キャッチに関して
+    - SentrySample.php エラーリポーティング
 
 - encoding 文字コードがらみ
     - mb_convert_encoding.php mb_convert_encodingの検出に関して

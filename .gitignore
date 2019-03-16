@@ -1,2 +1,5 @@
+/**/vendor/
+/**/.env
+/**/*.log
 /vendor/
 /import/sql/
