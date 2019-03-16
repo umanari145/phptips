@@ -1,0 +1,13 @@
+{
+    "name": "matsumoto/error",
+    "authors": [
+        {
+            "name": "Norio",
+            "email": "umanari145@gmail.com"
+        }
+    ],
+    "require": {
+        "sentry/sdk": "2.0.0",
+        "vlucas/phpdotenv": "^3.3"
+    }
+}
