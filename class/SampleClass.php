@@ -12,7 +12,7 @@ $sca->instanceMethod1();//4;
 $scb->instanceMethod1();//5;
 
 //クラスからインスタンス変数はよべない　エラーになる
-//$sca::instanceMethod1();//4;
+$sca::instanceMethod1();//4;
 
 $sca->instanceMethod2();//1;
 $scb->instanceMethod2();//1;

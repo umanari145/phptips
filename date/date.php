@@ -31,7 +31,7 @@ var_dump($day1);
 echo "年月日自分秒を独自に設定";
 
 $day1 = new DateTime();
-$day1->setDate(1980,5,13)->setTime(11,55,22);
+$day1->setDate(1980, 5, 13)->setTime(11, 55, 22);
 var_dump($day1);
 
 echo "任意フォーマットへの出力(個別の年月日などもこれで取り出す)\n";
