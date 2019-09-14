@@ -17,6 +17,10 @@ PHPに関わる小ネタ
     - SampleClass.php クラス変数とインスタンス変数の使い分け
     - SampleClass2.php マジックメソッド__callの使い方
 
+- csv
+    - dummy.php CSVのインポート＆エクスポート
+
+
 - curl
     - curl.php curlコマンドでのPOST
     - file_get_contents_.php file_get_contentsを使ったPOST
