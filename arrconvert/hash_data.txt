@@ -1,0 +1,12 @@
+member_type
+下級生
+上級生
+
+sex_type
+男性
+女性
+
+hobby
+スポーツ
+音楽
+--

@@ -9,6 +9,10 @@ PHPに関わる小ネタ
     - clouser2.php 無名関数、array_map、array_filter、array_columnを使ったサンプル
     - clouser3.php array_reduceを使ったサンプル
 
+- arrconvert
+    - make_hash.php プルダウン系のデータを配列のPHPコードにする
+    - hash_data.txt サンプルデータ
+
 - cached
     - cached.php 静的キャッシュの使い方
     - redis.php redisを使ったキャッシュ
