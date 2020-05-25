@@ -41,5 +41,6 @@ function my_shutdown_error_handle()
 
 //エラーメッセージをわざと出す
 echo $aaa;
+echo 'bbbb';
 //fatal errorでもキャッチ
 //echo func();
