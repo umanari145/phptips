@@ -21,6 +21,9 @@ PHPに関わる小ネタ
     - SampleClass.php クラス変数とインスタンス変数の使い分け
     - SampleClass2.php マジックメソッド__callの使い方
 
+- closure
+    - array_convert.php clouserを使ったarray_mapの自作
+
 - csv
     - dummy.php CSVのインポート＆エクスポート
 
