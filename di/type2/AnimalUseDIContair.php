@@ -14,12 +14,13 @@ require_once 'DogIncIF.php';
 require_once "../../vendor/autoload.php";
 require_once "di_config.php";
 
-$container['pet.name'] = 'pochi';
+$container['pet.name'] = 'tama';
 $animal = $container['animal'];
 $animal->showPetProf();
 
 
-class Animal{
+class Animal
+{
 
     private $pet;
 
