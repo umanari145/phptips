@@ -1,14 +1,25 @@
 <?php
 
+
+
+/**
+ * DIコンテナを使ったDI
+ *
+ */
+
 require_once 'PetInterface.php';
 require_once 'CatIncIF.php';
 require_once 'DogIncIF.php';
 
+require_once "../../vendor/autoload.php";
+require_once "di_config.php";
 
-$pet = new Pet(new DogIncIF());
-$pet->showPetProf();
+$container['pet.name'] = 'pochi';
+$animal = $container['animal'];
+$animal->showPetProf();
 
-class Pet{
+
+class Animal{
 
     private $pet;
 

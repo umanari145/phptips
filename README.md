@@ -34,9 +34,17 @@ PHPに関わる小ネタ
 - date/date.php dateTimeを使った日付の処理全般
 
 - di Diのサンプル
-    - Dog.php メソッドインジェクション、セッタインジェクション、コンストラクタインジェクション
-    - BuyFacade.php   DIを使わないサンプル(内部でクラスの作成)
-    - BuyFacadeDI.php DIを使ったサンプル(createでの結合をする)
+    - type1
+        - Dog.php メソッドインジェクション、セッタインジェクション、コンストラクタインジェクション
+        - BuyFacade.php   DIを使わないサンプル(内部でクラスの作成)
+        - BuyFacadeDI.php DIを使ったサンプル(createでの結合をする)
+    - type2
+        - DogIncIF.php IF(interface)ありのDogクラス
+        - CatIncIF.php IF(interface)ありのCatクラス
+        - PetInterface DogIncIFとCatIncIFのインターフェイス
+        - Animal.php 注入される側(DIが使われてる側。ただしDIコンテナは使わない)
+        - AnimalUseDIContair.php 注入される側(DIコンテナ:Pimple使用 )
+
 
 - error エラーハンドリング
     - errorCatch.php エラーハンドリングの具体例

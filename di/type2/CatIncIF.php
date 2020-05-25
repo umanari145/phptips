@@ -6,6 +6,10 @@ class CatIncIF implements PetInterface {
 
     private $name;
 
+    public function __construct($name) {
+        $this->name = $name;
+    }
+    
     public function getName() {
         echo "cat name is " . $this->name . "\n";
     }
