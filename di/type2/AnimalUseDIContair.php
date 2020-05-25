@@ -7,9 +7,9 @@
  *
  */
 
-require_once 'PetInterface.php';
-require_once 'CatIncIF.php';
-require_once 'DogIncIF.php';
+require_once 'Pet.php';
+require_once 'Cat.php';
+require_once 'Dog.php';
 
 require_once "../../vendor/autoload.php";
 require_once "di_config.php";
@@ -24,7 +24,7 @@ class Animal
 
     private $pet;
 
-    public function __construct(PetInterface $pet) {
+    public function __construct(Pet $pet) {
         $this->pet = $pet;
     }
 

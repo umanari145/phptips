@@ -1,8 +1,8 @@
 <?php
 
-require_once 'PetInterface.php';
+require_once 'Pet.php';
 
-class CatIncIF implements PetInterface
+class Cat implements Pet
 {
 
     private $name;

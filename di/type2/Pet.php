@@ -4,7 +4,7 @@
 /**
  * インターフェイス
  */
-interface PetInterface
+interface Pet
 {
     public function getName();
 

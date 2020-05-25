@@ -8,9 +8,9 @@ $container['pet.name'] = '';
 
 $container['pet'] = $container->factory(function ($c) {
     //猫の場合
-    return new CatIncIF($c['pet.name']);
+    return new Cat($c['pet.name']);
     //犬の場合
-    //return new DogIncIF($c['pet.name']);
+    //return new Dog($c['pet.name']);
 });
 
 $container['animal'] = $container->factory(function ($c) {
