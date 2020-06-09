@@ -1,6 +1,6 @@
 <?php
 
-require_once 'vendor/autoload.php';
+require_once '../vendor/autoload.php';
 require_once 'conf.php';
 require_once 'params.php';
 
@@ -19,10 +19,3 @@ $url2 = GUZZLE_URL . '/users/viewannouncelist';
 $response2 = $client->get($url2);
 echo $response2->getBody();
 exit();
-
-
-/*
-$('input').each(function(i,e){
-	console.log($(e).attr('name'))
-})
-*/
