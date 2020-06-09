@@ -1,3 +1,0 @@
-<?php
-
-define('POST_URL', 'http://localhost/dtcrm/hogehoge');

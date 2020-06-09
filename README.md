@@ -28,12 +28,6 @@ PHPに関わる小ネタ
     - dummy.php CSVのインポート＆エクスポート
 
 
-- curl
-    - curl.php curlコマンドでのPOST
-    - file_get_contents_.php file_get_contentsを使ったPOST
-    - #他にguzzleなどHTTPクライアントを使った方がいいかも。。。
-
-
 - date/date.php dateTimeを使った日付の処理全般
 
 - di Diのサンプル
@@ -88,6 +82,11 @@ PHPに関わる小ネタ
     - Dog.php 子クラス2
     - ClassLoader.php autoloadの作成
     - reflection.php 実際の動的クラスの呼び出し
+
+- request
+    - curl.php curlコマンドでのPOST
+    - file_get_contents_.php file_get_contentsを使ったPOST
+    - #他にguzzleなどHTTPクライアントを使った方がいいかも。。。
 
 - trait traitの活用(外部実装)
     - samplClass.php traitを受ける側の通常の野良クラス

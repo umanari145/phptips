@@ -1,6 +1,7 @@
 /**/vendor/
 /**/.env
-/curl/conf.php
+/request/conf.php
+/request/params.php
 /**/*.log
 /vendor/
 /import/sql/
