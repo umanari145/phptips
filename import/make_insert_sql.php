@@ -50,7 +50,11 @@ foreach ($record as $eachrecord) {
     $column = array_keys($eachrecord);
     $value_list = array_values($eachrecord);
     $value_list = array_map(function ($v) {
-        return "'" . $v . "'";
+        if ($v === 'NULL' || $v === 'true' || $v == 'false') {
+            return $v;
+        } else {
+            return "'" . $v . "'";
+        }
     }, $value_list);
 
     $each_data_arr = [];

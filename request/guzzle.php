@@ -6,7 +6,8 @@ require_once 'params.php';
 
 $url = GUZZLE_URL . '/users/login';
 $client = new \GuzzleHttp\Client([
-    'cookies' => true, 'http_errors' => false
+    'cookies' => true,
+    'http_errors' => false
 ]);
 
 $response = $client->post($url, [
