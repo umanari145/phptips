@@ -26,6 +26,7 @@ PHPに関わる小ネタ
 
 - csv
     - dummy.php CSVのインポート＆エクスポート
+    - load.csv CSVの読み込みとハッシュ化
 
 
 - date/date.php dateTimeを使った日付の処理全般
