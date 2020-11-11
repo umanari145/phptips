@@ -5,3 +5,4 @@
 /**/*.log
 /vendor/
 /import/sql/
+/**/.DS_Store
