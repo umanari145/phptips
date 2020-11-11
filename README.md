@@ -71,6 +71,8 @@ PHPに関わる小ネタ
         ```        
     - sample.csv サンプルCSV
 
+- logdir ログに関するテスト
+
 - namespace namespaceを使ったサンプル
 
 - pdflib pdfの活用   
