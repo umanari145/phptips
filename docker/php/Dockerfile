@@ -1,4 +1,4 @@
-FROM php:7.3-apache
+FROM php:7.4-apache
 
 RUN echo 'date.timezone = "Asia/Tokyo"' > /usr/local/etc/php/conf.d/timezone.ini
 RUN a2enmod rewrite
