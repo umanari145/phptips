@@ -14,7 +14,7 @@ $format = "%datetime% > %level_name% > %message% %context% %extra%\n";
 
 $formatter = new LineFormatter($format,$date_format);
 
-$stream = new StreamHandler(__DIR__.'/request.log', Logger::INFO);
+$stream = new StreamHandler(__DIR__.'/debug.log', Logger::INFO);
 $stream->setFormatter($formatter);
 //出力先(通常ログ)
 $log->pushHandler($stream);
