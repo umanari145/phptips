@@ -8,6 +8,7 @@
     ],
     "require": {
         "sentry/sdk": "2.0.0",
-        "vlucas/phpdotenv": "^3.3"
+        "vlucas/phpdotenv": "^3.3",
+        "j4mie/idiorm": "^1.5"
     }
 }
