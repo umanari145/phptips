@@ -75,6 +75,9 @@ PHPに関わる小ネタ
     - sample.csv サンプルCSV
 
 - logdir ログに関するテスト
+    - monolog.php モノログのサンプル
+    - Log.php monologのラッパー
+    - logCallSample.php ログを呼び出すサンプル
 
 - namespace namespaceを使ったサンプル
 

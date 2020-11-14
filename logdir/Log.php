@@ -6,25 +6,30 @@ use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 use Monolog\Formatter\LineFormatter;
 use Monolog\Handler\RotatingFileHandler;
+use Monolog\Handler\NativeMailerHandler;
 
 class Log {
     
     private $log_level;
 
     public function __construct($channnel, $file_name = 'debug.log', $log_level = Logger::DEBUG) {
-
         $this->log_level = $log_level;
-        $this->loadFileStream($channnel, $file_name);
+        $this->log_format = "[%datetime%] %level_name%:%message% %context% %extra%\n";
+        $this->date_format = 'Y/m/d H:i:s';
+
+        //ファイルにだす
+        //$this->loadFileStream($channnel, $file_name);
+        //標準出力
+        //$this->loadStdStream($channnel, $log_level);
+        //別の媒体(メール、DB、slack・・・)
+        $this->loadMailStream($channnel, $log_level);
     }
 
     private function loadFileStream($channnel, $file_name) {
         
         $log = new Logger($channnel);
 
-        $log_format = "[%datetime%] %level_name%:%message% %context% %extra%\n";
-        $date_format = 'Y/m/d H:i:s';
-        $formatter = new LineFormatter($log_format, $date_format);
-
+        $formatter = new LineFormatter($this->log_format, $this->date_format);
         $file_path = sprintf("%s/%s", __DIR__, $file_name);
         $streamHandler = new StreamHandler($file_path, $this->log_level);
 
@@ -37,6 +42,32 @@ class Log {
 
         $this->log = $log;
     }
+
+    private function loadStdStream($channnel, $log_level) {
+     
+        $log = new Logger($channnel);
+
+        $formatter = new LineFormatter($this->log_format, $this->date_format);
+        $streamHandler = new StreamHandler("php://stdout", $this->log_level);
+
+        $log->pushHandler($streamHandler);
+        $this->log = $log;
+    }
+
+
+    private function loadMailStream($channnel, $log_level) {
+     
+        $log = new Logger($channnel);
+
+        $to = 'umanari145@gmail.com';
+        $from = 'umanari145@gmail.com';
+        $formatter = new LineFormatter($this->log_format, $this->date_format);
+        $nativeMailerHandler = new NativeMailerHandler($to, "ログ告知", $from, $log_level);
+    
+        $log->pushHandler($nativeMailerHandler);
+        $this->log = $log;
+    }
+
 
     /**
      * info,log,warning,errorなどをマジックメソッドで呼び出す
