@@ -97,6 +97,13 @@ PHPに関わる小ネタ
     - file_get_contents_.php file_get_contentsを使ったPOST
     - #他にguzzleなどHTTPクライアントを使った方がいいかも。。。
 
+- routing
+    - Controller　コントーラー群
+    - Service　サービス群
+    - Model　モデル群
+    - .htaccess htaccess(主にファイルがなかった時にindexを向かせる記述)
+    - index.php 実際のルーティングの記述
+
 - trait traitの活用(外部実装)
     - samplClass.php traitを受ける側の通常の野良クラス
     - sampleProgram.php sampleClassを呼び出して実行するクラス
