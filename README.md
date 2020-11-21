@@ -103,6 +103,11 @@ PHPに関わる小ネタ
     - Model　モデル群
     - .htaccess htaccess(主にファイルがなかった時にindexを向かせる記述)
     - index.php 実際のルーティングの記述
+```
+http://localhost:8080/routing/sampleAction→Controller/TopControllerのsampleActionにアクセス
+参照リンク
+https://www.codit.work/notes/30lgs07yv3ycwjpz6p8y/
+```
 
 - trait traitの活用(外部実装)
     - samplClass.php traitを受ける側の通常の野良クラス
