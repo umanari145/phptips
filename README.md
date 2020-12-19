@@ -40,8 +40,8 @@ PHPに関わる小ネタ
         - DogIncIF.php IF(interface)ありのDogクラス
         - CatIncIF.php IF(interface)ありのCatクラス
         - PetInterface DogIncIFとCatIncIFのインターフェイス
-        - Animal.php 注入される側(DIが使われてる側。ただしDIコンテナは使わない)
-        - AnimalUseDIContair.php 注入される側(DIコンテナ:Pimple使用 )
+        - Animal.php 注入される側(DIが使われてる側。ただしDIコンテナは使わない) 欠点としては具体的なクラスを記述する必要がある
+        - AnimalUseDIContair.php 注入される側(DIコンテナ:Pimple使用 ) 利点としてはIF以下のクラスが見えなくても大丈夫(require_onceは覗く)
 
 
 - error エラーハンドリング
