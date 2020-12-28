@@ -20,3 +20,12 @@ $arr2 = array_convert(function($v){
 }, $arr);
 
 var_dump($arr2);
+
+echo "-------------通常のclouser----------------\n";
+
+$count = 10;
+$test = function ($count) {
+    return $count * 2;
+};
+
+var_dump($test(10));
