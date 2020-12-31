@@ -12,6 +12,8 @@
         "pimple/pimple": "~3.0",
         "guzzlehttp/guzzle": "^6.5",
         "monolog/monolog": "^2.1",
-        "altorouter/altorouter": "^2.0"
+        "altorouter/altorouter": "^2.0",
+        "sendgrid/sendgrid": "^7.9",
+        "vlucas/phpdotenv": "^5.2"
     }
 }

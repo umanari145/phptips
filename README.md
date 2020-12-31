@@ -103,6 +103,10 @@ PHPに関わる小ネタ
     - Model　モデル群
     - .htaccess htaccess(主にファイルがなかった時にindexを向かせる記述)
     - index.php 実際のルーティングの記述
+
+- sendgrid 
+    - sendgridを使ったメールサンプル
+    
 ```
 http://localhost:8080/routing/sampleAction→Controller/TopControllerのsampleActionにアクセス
 参照リンク
