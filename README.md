@@ -74,6 +74,8 @@ PHPに関わる小ネタ
         ```        
     - sample.csv サンプルCSV
 
+- jwt JWT認証のサンプル
+
 - logdir ログに関するテスト
     - monolog.php モノログのサンプル
     - Log.php monologのラッパー
