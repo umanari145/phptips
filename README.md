@@ -84,7 +84,7 @@ PHPに関わる小ネタ
     #tokenの発行
     {"token":"xxxxxxxx"}
     ```
-   - data.php
+  - data.php tokenを受け取り、実際にデータを返す部分
     ```
     curl -X GET http://localhost:8080/jwt/data.php \
     -H "Content-Type: application/json" \
