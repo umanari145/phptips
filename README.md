@@ -74,8 +74,19 @@ PHPに関わる小ネタ
         ```        
     - sample.csv サンプルCSV
 
-- jwt JWT認証のサンプル
-
+- jwt JWT認証のサンプル 
+  - login.php ログインの際にPOSTするプログラム
+    ```
+    curl -X POST http://localhost:8080/jwt/login.php \
+    -H "Content-Type: application/json" \
+    -d  '{"username": "test", "password": "test"}'
+    ```
+   - data.php
+    ```
+    GET http://localhost/data.php
+    Content-Type: application/json
+    Authorization: Bearer 
+    ```
 - logdir ログに関するテスト
     - monolog.php モノログのサンプル
     - Log.php monologのラッパー
