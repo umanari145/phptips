@@ -2,7 +2,7 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 use Dotenv\Dotenv;
-use \Firebase\JWT\JWT;
+use Firebase\JWT\JWT;
 
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
@@ -16,20 +16,20 @@ if (strtoupper($_SERVER['REQUEST_METHOD']) == 'POST') {
         $input = array_merge(array('username' => '', 'password' => ''), $input);
         $username = $input['username'];
         $password = $input['password'];
-        
-        $ok = ($username == 'test' && $password == 'test'); // username = test, password = test で認証 OK とする (仮)
+
+        $ok = ($username == $_ENV['USER_NAME'] && $password == $_ENV['PASSWORD']);
+
         if ($ok) {
             $payload = array(
-                'iss' => JWT_ISSUER,
-                'exp' => time() + JWT_EXPIRES,
+                'iss' => $_ENV['JWT_ISSUER'],
+                'exp' => time() + $_ENV['JWT_EXPIRES'],
                 'username' => $username,
             );
-            $jwt = JWT::encode($payload, JWT_KEY, JWT_ALG);
-    
+            $jwt = JWT::encode($payload, $_ENV['JWT_KEY'], $_ENV['JWT_ALG']);
             header('Content-Type: application/json');
             header('Access-Control-Allow-Origin: *'); // CORS
             echo json_encode(array('token' => $jwt)); // token を返却
-            return;
+            exit();
         }
     }
     // JSON 取得失敗、認証に失敗した場合は 401

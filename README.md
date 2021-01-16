@@ -79,13 +79,22 @@ PHPに関わる小ネタ
     ```
     curl -X POST http://localhost:8080/jwt/login.php \
     -H "Content-Type: application/json" \
-    -d  '{"username": "test", "password": "test"}'
+    -d  '{"username": "sampleUser", "password": "samplePass"}'
+    
+    #tokenの発行
+    {"token":"xxxxxxxx"}
     ```
    - data.php
     ```
-    GET http://localhost/data.php
-    Content-Type: application/json
-    Authorization: Bearer 
+    curl -X GET http://localhost:8080/jwt/data.php \
+    -H "Content-Type: application/json" \
+    -H "Authorization: Bearer XXXXX(token文字列)" 
+
+    # user情報が出力されていればOK
+    {"username":"sampleUser"}
+    
+    #こけたら下記のように出力される
+     "Signature verification failed"
     ```
 - logdir ログに関するテスト
     - monolog.php モノログのサンプル
