@@ -3,6 +3,7 @@
 /request/conf.php
 /request/params.php
 /**/*.log
+/redis/data
 /vendor/
 /import/sql/
 /**/.DS_Store

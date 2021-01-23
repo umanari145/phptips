@@ -11,6 +11,15 @@ services:
         - .:/var/www/html
     networks:
       - phptips
+  redis:
+    container_name: phptips_redis    
+    image: "redis:latest"
+    ports:
+      - "6379:6379"
+    volumes:
+      - "./redis/data:/data"
+    networks:
+      - phptips
 
   db:
     container_name: phptips_db
