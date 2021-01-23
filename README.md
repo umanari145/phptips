@@ -107,6 +107,9 @@ PHPに関わる小ネタ
     - pdfgenerateor.php fpdfを使ったサンプル
     - pdfgenerateor2.php tcpdfを使ったサンプル
 
+- redis redisのサンプル
+    - redisSample.php Redisのサンブル　Redisコマンド自体はredisコンテナの中でみる
+
 - reflection 動的クラスの作成
     - Animal.php 親クラス
     - Cat.php 子クラス1
