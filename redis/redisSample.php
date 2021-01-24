@@ -49,7 +49,7 @@ $memberSerialize = json_encode($arr3);
 $client->set("user_data:type03", $memberSerialize);
 
 
-//復元
+//復元(keyの取得)
 $keys = $client->keys("user_data:type*");
 
 //keyから復元

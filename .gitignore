@@ -4,6 +4,7 @@
 /request/params.php
 /**/*.log
 /redis/data
+/redis/insight
 /vendor/
 /import/sql/
 /**/.DS_Store

@@ -109,6 +109,8 @@ PHPに関わる小ネタ
 
 - redis redisのサンプル
     - redisSample.php Redisのサンブル　Redisコマンド自体はredisコンテナの中でみる
+    - http://localhost:8001/ でGUIツールにアクセス可能
+    - redisinsigt.pngは接続時の情報
 
 - reflection 動的クラスの作成
     - Animal.php 親クラス
