@@ -28,7 +28,16 @@ services:
     volumes:
       - ./redis/insight:/db
     networks:
-      - phptips 
+      - phptips
+  mailhog:
+    container_name: phptips_mailhog
+    image: mailhog/mailhog
+    ports:
+      - "8025:8025"
+    volumes:
+     - "./mail/mhsendmail:/usr/local/bin/mhsendmail"
+    networks:
+      - phptips
 
   db:
     container_name: phptips_db

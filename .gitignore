@@ -8,3 +8,4 @@
 /vendor/
 /import/sql/
 /**/.DS_Store
+/mail/mhsendmail

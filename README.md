@@ -101,6 +101,11 @@ PHPに関わる小ネタ
     - Log.php monologのラッパー
     - logCallSample.php ログを呼び出すサンプル
 
+- mail メールのサンプル
+    - sampleSendMail.php(phptips_php7コンテナの中に入って動かす)
+    - http://localhost:8025/ でGUIツールにアクセス可能
+    - mailhog.pngはmailhogのサンプルの中に入っている情報
+
 - namespace namespaceを使ったサンプル
 
 - pdflib pdfの活用   
