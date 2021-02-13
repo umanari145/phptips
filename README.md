@@ -103,7 +103,7 @@ PHPに関わる小ネタ
 
 - mail メールのサンプル
     - sampleSendMail.php(phptips_php7コンテナの中に入って動かす)
-    - http://localhost:8025/ でGUIツールにアクセス可能
+    - http://localhost:8025/ でGUIツールにアクセス可能(実際にメールは送信されないでこのツールで実際の仮想環境的なものが確認できる)
     - mailhog.pngはmailhogのサンプルの中に入っている情報
 
 - namespace namespaceを使ったサンプル
