@@ -107,6 +107,7 @@ PHPに関わる小ネタ
     - mailhog.pngはmailhogのスクショ
 
 - namespace namespaceを使ったサンプル
+- oauth oauthを使った認証ロジック
 
 - pdflib pdfの活用   
     - pdfgenerateor.php fpdfを使ったサンプル
