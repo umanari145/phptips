@@ -122,6 +122,7 @@ PHPに関わる小ネタ
     - 参照リンク
         - https://qiita.com/biy0ganba/items/6c3a886759254e0e942c フロント側の実装
         - https://developers.google.com/my-business/content/implement-oauth?hl=ja google公式
+        - https://console.developers.google.com/apis/credentials 認証情報のgoogle画面
         - https://qiita.com/kmtym1998/items/768212fe92dbaa384c27 サーバーサイド側の実装
 
 - pdflib pdfの活用   
