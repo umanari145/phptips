@@ -9,3 +9,5 @@
 /import/sql/
 /**/.DS_Store
 /mail/mhsendmail
+/**/config.json
+/**/cache

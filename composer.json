@@ -17,6 +17,8 @@
         "vlucas/phpdotenv": "^5.2",
         "firebase/php-jwt": "^5.2",
         "predis/predis": "^1.1",
-        "google/apiclient": "^2.9"
+        "google/apiclient": "^2.9",
+        "jenssegers/blade": "^1.4",
+        "larapack/dd": "1.*"
     }
 }

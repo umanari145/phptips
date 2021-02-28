@@ -107,7 +107,22 @@ PHPに関わる小ネタ
     - mailhog.pngはmailhogのスクショ
 
 - namespace namespaceを使ったサンプル
-- oauth oauthを使った認証ロジック
+- oauth googleoauthを使った認証ロジック
+    - cache テンプレートキャッシュディレクトリ
+    - template　テンプレート(bladeを単独で使用)
+        - login.blade.php ログインのテンプレート
+    - public
+        - login.js login時のJSの実装
+    - index.php エントリーポイント(ログイン画面)
+    - config.json googleアカウントなどの情報(clientIDなどの情報)
+    - config.json.sample テンプレート 
+    - home.php ログイン後の画面
+    - loginCheck.php tokenの照合
+    - logOut.php ログアウト時の処理
+    - 参照リンク
+        - https://qiita.com/biy0ganba/items/6c3a886759254e0e942c フロント側の実装
+        - https://developers.google.com/my-business/content/implement-oauth?hl=ja google公式
+        - https://qiita.com/kmtym1998/items/768212fe92dbaa384c27 サーバーサイド側の実装
 
 - pdflib pdfの活用   
     - pdfgenerateor.php fpdfを使ったサンプル
