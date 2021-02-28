@@ -121,9 +121,11 @@ PHPに関わる小ネタ
     - logOut.php ログアウト時の処理
     - 参照リンク
         - https://qiita.com/biy0ganba/items/6c3a886759254e0e942c フロント側の実装
+        - https://blog.4breaker.com/2020/06/03/post-1162/ フロント側の実装
         - https://developers.google.com/my-business/content/implement-oauth?hl=ja google公式
         - https://console.developers.google.com/apis/credentials 認証情報のgoogle画面
         - https://qiita.com/kmtym1998/items/768212fe92dbaa384c27 サーバーサイド側の実装
+        - https://code.tutsplus.com/tutorials/create-a-google-login-page-in-php--cms-33214 サーバサイド側の実装
 
 - pdflib pdfの活用   
     - pdfgenerateor.php fpdfを使ったサンプル
