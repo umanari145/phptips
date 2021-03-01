@@ -4,7 +4,8 @@
  *  clouserを使ったarray_mapもどき
  *
  */
-function array_convert($callback, $arr) {
+function array_convert(callable $callback, array $arr)
+{
     foreach ($arr as $key => &$value) {
         $value = $callback($value);
     }
@@ -15,7 +16,8 @@ $arr = [
     1,2,3,4
 ];
 
-$arr2 = array_convert(function($v){
+//無名関数を引数にとる collectionのmapなどと同じ()
+$arr2 = array_convert(function ($v) {
     return $v * 2;
 }, $arr);
 
@@ -29,3 +31,17 @@ $test = function ($count) {
 };
 
 var_dump($test(10));
+
+
+
+echo "-------------使い捨ての用途 配列の中にちょっとした関数を入れたい時----------------\n";
+
+$taxRate = 1.08;
+$arr = [
+    'key1' => 10,
+    'price' => function ($v) use ($taxRate) {
+        return $v * 2 * $taxRate;
+    }
+];
+
+var_dump($arr['price'](10));
