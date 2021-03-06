@@ -19,6 +19,8 @@
         "predis/predis": "^1.1",
         "google/apiclient": "^2.9",
         "jenssegers/blade": "^1.4",
-        "larapack/dd": "1.*"
+        "larapack/dd": "1.*",
+        "illuminate/validation": "^8.31",
+        "illuminate/translation": "^8.31"
     }
 }
