@@ -105,6 +105,9 @@ PHPに関わる小ネタ
     - sampleSendMail.php(phptips_php7コンテナの中に入って動かす)
     - http://localhost:8025/ でGUIツールにアクセス可能(実際にメールは送信されないでこのツールで仮想的に確認できる)
     - mailhog.pngはmailhogのスクショ
+- memory_management メモリ管理(メモリ節約のパターン)　参考URL https://code-boxx.com/php-memory-management/
+    - unset_pattern.php unsetのパターン　
+
 
 - namespace namespaceを使ったサンプル
 - oauth googleoauthを使った認証ロジック
