@@ -98,7 +98,7 @@ PHPに関わる小ネタ
     ```
 - logdir ログに関するテスト
     - monolog.php モノログのサンプル
-    - Log.php monologのラッパー
+    - Log.php monologのラッパークラス
     - logCallSample.php ログを呼び出すサンプル
 
 - mail メールのサンプル
