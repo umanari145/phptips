@@ -43,10 +43,11 @@ PHPに関わる小ネタ
         - Animal.php 注入される側(DIが使われてる側。ただしDIコンテナは使わない) 欠点としては具体的なクラスを記述する必要がある
         - AnimalUseDIContair.php 注入される側(DIコンテナ:Pimple使用 ) 利点としてはIF以下のクラスが見えなくても大丈夫(require_onceは覗く)
     - type3 DIをテスト用と本番用で手動で分ける
-        - config.php 開発と本番の住み分け
+        - SendMailIF.php sendmail用のインターフェイス
+        - SendMail.php sendmailプログラム
         - ProdSendMail.php 本番用のsendmailプログラム
         - TestSendMail.php 開発用のsendmailプログラム
-        - sendMail.php
+        - sendMailDI.php ここでテスト用か本番用かの注入を行う
 
 
 - error エラーハンドリング
