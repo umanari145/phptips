@@ -42,9 +42,10 @@ PHPに関わる小ネタ
         - PetInterface DogIncIFとCatIncIFのインターフェイス
         - Animal.php 注入される側(DIが使われてる側。ただしDIコンテナは使わない) 欠点としては具体的なクラスを記述する必要がある
         - AnimalUseDIContair.php 注入される側(DIコンテナ:Pimple使用 ) 利点としてはIF以下のクラスが見えなくても大丈夫(require_onceは覗く)
-    - type3 DIをテスト用と本番用で手動で分ける
+    - type3 DIコンテナをテスト用と本番用で手動で分ける(DIが一番効果を発揮する場面)
         - SendMailIF.php sendmail用のインターフェイス
-        - SendMail.php sendmailプログラム
+        - SendMail.php sendmailプログラム(クラスがここで入っていないので依存性がない)
+        - container.php DIコンテナ
         - ProdSendMail.php 本番用のsendmailプログラム
         - TestSendMail.php 開発用のsendmailプログラム
 
