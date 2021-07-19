@@ -1,4 +1,4 @@
 <?php
 
 
-define('ENV', 'prod');
+define('ENV', 'test');

@@ -1,6 +1,5 @@
 <?php
 
-require_once 'config.php';
 require_once 'ProdSendMail.php';
 require_once 'TestSendMail.php';
 require_once 'container.php';
