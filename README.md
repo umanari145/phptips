@@ -47,7 +47,6 @@ PHPに関わる小ネタ
         - SendMail.php sendmailプログラム
         - ProdSendMail.php 本番用のsendmailプログラム
         - TestSendMail.php 開発用のsendmailプログラム
-        - sendMailDI.php ここでテスト用か本番用かの注入を行う
 
 
 - error エラーハンドリング
