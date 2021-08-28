@@ -114,6 +114,7 @@ PHPに関わる小ネタ
 - memory_management メモリ管理(メモリ節約のパターン)　参考URL https://code-boxx.com/php-memory-management/
     - unset_pattern.php unsetのパターン　
 - phpExcel PhpSpreadsheetを使ったサンプル
+    - PHPExcel PHPからExcelの読み書きを行う
 
 - namespace namespaceを使ったサンプル
 - oauth googleoauthを使った認証ロジック
