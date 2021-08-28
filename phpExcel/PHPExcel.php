@@ -8,7 +8,10 @@ use PhpOffice\PhpSpreadsheet\Spreadsheet as SpreadSheet;
 use Faker\Factory as Faker;
 
 $phpExcel = new PHPExcel();
-$phpExcel->writeExcel();
+//データ書き込み
+//$phpExcel->writeExcel();
+
+$phpExcel->readExcel();
 
 class PHPExcel
 {
@@ -43,4 +46,45 @@ class PHPExcel
         $this->writeExcel->save($this->dir . "output.xlsx");
     }
 
+    public function readExcel(): array
+    {
+        $obj = $this->readExcel->load($this->dir . "output.xlsx");
+        //全シートの取得
+        $sheets = $obj->getSheetNames();
+        $dataArr = [];
+        foreach ($sheets as $eachSheetName) {
+            if ($eachSheetName !== 'Worksheet') {
+                $colIndex = 0;
+                $sheet= $obj->getSheetByName($eachSheetName);
+                $tmpArr = $this->makeHashFromTable($sheet);
+                $dataArr = array_merge($dataArr, $tmpArr);
+            }
+        }
+        return $dataArr;
+    }
+
+    public function makeHashFromTable($sheet): array
+    {
+        $dataArr = [];
+        $header = [];
+        foreach ($sheet->getRowIterator() as $row) {
+            $data = [];
+            $rowIndex = $row->getRowIndex();
+            foreach ($sheet->getColumnIterator() as $column) {
+                $colAlphabet = $column->getColumnIndex();
+                $value = $sheet->getCell($colAlphabet . $rowIndex)->getFormattedValue();
+                if ($rowIndex === 1) {
+                    $header[] = $value;
+                } else {
+                    $data[] = $value;
+                }
+            }
+            if ($rowIndex > 1) {
+                if (!empty($data) && count($header) === count($data)) {
+                    $dataArr[] = array_combine($header, $data);
+                }
+            }
+        }
+        return $dataArr;
+    }
 }
