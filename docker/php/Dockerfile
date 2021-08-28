@@ -17,4 +17,9 @@ RUN curl -sSL https://github.com/mailhog/mhsendmail/releases/download/v0.2.0/mhs
 
 RUN php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer
 
+RUN apt-get install -y libpq-dev libfreetype6-dev libjpeg62-turbo-dev libpng-dev zlib1g-dev libzip-dev
+RUN docker-php-ext-configure gd --with-freetype --with-jpeg 
+RUN docker-php-ext-install -j$(nproc) gd 
+RUN docker-php-ext-install zip
+
 EXPOSE 80

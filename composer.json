@@ -21,6 +21,7 @@
         "jenssegers/blade": "^1.4",
         "larapack/dd": "1.*",
         "illuminate/validation": "^8.31",
-        "illuminate/translation": "^8.31"
+        "illuminate/translation": "^8.31",
+        "phpoffice/phpspreadsheet": "^1.18"
     }
 }
