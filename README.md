@@ -103,7 +103,7 @@ PHPに関わる小ネタ
      "Signature verification failed"
     ```
 - logdir ログに関するテスト
-    - monolog.php モノログのサンプル
+    - monolog.php モノログのサンプル 参考 https://gist.github.com/megatk/b7b7d9add34592d104a6  https://kzhishu.hatenablog.jp/entry/2015/10/04/200000
     - Log.php monologのラッパークラス
     - logCallSample.php ログを呼び出すサンプル
 
