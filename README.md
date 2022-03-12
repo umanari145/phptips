@@ -80,7 +80,7 @@ PHPに関わる小ネタ
         ```        
     - sample.csv サンプルCSV
 
-- jwt JWT認証のサンプル 
+- jwt JWT認証のサンプル (uml/jwt.pu jwtのシーケンス図)
   - login.php ログインの際にPOSTするプログラム
     ```
     curl -X POST http://localhost:8080/jwt/login.php \
@@ -117,7 +117,7 @@ PHPに関わる小ネタ
     - PHPExcel PHPからExcelの読み書きを行うことができる
 
 - namespace namespaceを使ったサンプル
-- oauth googleoauthを使った認証ロジック
+- oauth googleoauthを使った認証ロジック(uml/googleAuth.push参照)
     - cache テンプレートキャッシュディレクトリ
     - template　テンプレート(bladeを単独で使用)
         - login.blade.php ログインのテンプレート
