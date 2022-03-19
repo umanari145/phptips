@@ -53,7 +53,7 @@ PHPに関わる小ネタ
 - error エラーハンドリング
     - errorCatch.php エラーハンドリングの具体例
     - exception.php 例外キャッチに関して
-    - SentrySample.php エラーリポーティング
+    - SentrySample.php エラーリポーティング(```https://sentry.io/settings/```でSENTRY_URLを取得)
     - CustomException.php 独自のException
     - MemberController.php ServiceのExceptionのキャッチ
     - MemberService.php 様々な例外のパターンを記述
