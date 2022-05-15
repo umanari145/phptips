@@ -1,0 +1,7 @@
+column,mold,is_not_null
+id,int,1
+name,string,1
+age,int,
+zip_code,string,1
+address,string,
+telephone,string,

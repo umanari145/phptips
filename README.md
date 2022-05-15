@@ -182,5 +182,8 @@ https://www.codit.work/notes/30lgs07yv3ycwjpz6p8y/
 - underbar
     - scripts/summary.php underbar.phpを使ったサンプル
 
+- util
+    - makeModel.php getter-setterを記載するプログラム
+
 - validation
     - laravelのvalidationライブラリ
