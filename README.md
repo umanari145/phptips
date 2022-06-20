@@ -79,6 +79,9 @@ PHPに関わる小ネタ
         php make_insert_sql.php -i"入力ファイル名" -o"出力ファイル名" -t"テーブル名"
         ```        
     - sample.csv サンプルCSV
+- invoke
+    - SampleClass.php invokeを内蔵したプログラム
+    - yobidashi.php 呼び出し側のプログラム
 
 - jwt JWT認証のサンプル (uml/jwt.pu jwtのシーケンス図)
   - login.php ログインの際にPOSTするプログラム
