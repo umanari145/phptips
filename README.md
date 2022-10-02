@@ -110,6 +110,11 @@ PHPに関わる小ネタ
     - Log.php monologのラッパークラス
     - logCallSample.php ログを呼び出すサンプル
 
+- last_static_binding 静的遅延束縛(selfとstatic)による違いなど
+    - ParentClass.php 親クラス
+    - ChildClass.php 子クラス 
+    - start.php 実際のクラスを呼び出す場所
+
 - mail メールのサンプル
     - sampleSendMail.php(phptips_php7コンテナの中に入って動かす)
     - http://localhost:8025/ でGUIツールにアクセス可能(実際にメールは送信されないでこのツールで仮想的に確認できる)
