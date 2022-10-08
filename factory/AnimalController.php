@@ -14,15 +14,18 @@ $animalController->set_animal('cat', 'tama');
 //cat name is tama
 //nyanya
 
-class AnimalController {
+class AnimalController
+{
 
     private $factory;
 
-    public function __construct($factory) {
+    public function __construct($factory)
+    {
         $this->factory = $factory;
     }
 
-    public function set_animal($type, $name) {
+    public function setAnimal($type, $name): void
+    {
         $animal = $this->factory->createAnimal($type, $name);
         $animal->getName();
         $animal->bark();

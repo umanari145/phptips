@@ -63,6 +63,14 @@ PHPに関わる小ネタ
     - cp932_text.txt cp932で保存したファイル
     - utf8_text.txt utf8で保存したファイル
 
+- factory Factoryパターンについてのサンプルコード
+    - 参考 https://qiita.com/shoheiyokoyama/items/d752834a6a2e208b90ca#account%E3%82%AF%E3%83%A9%E3%82%B9
+    - AnimalController factoryの呼び出し
+    - AnimalFactory 実際の具体生成箇所(正しくfactory)
+    - Cat.php 具象クラス 
+    - Dog.php 具象クラス
+    - Pet.php IF(Cat、Dogの上位)
+
 - filepointer ファイルポインタに関して
     - file_pointer.php ファイルポインタの検出に関して
     - sample_text.txt サンプルテキスト

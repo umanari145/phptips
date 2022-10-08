@@ -1,9 +1,10 @@
 <?php
 
 
-class AnimalFactory {
-
-    public function createAnimal( $type, $name) {
+class AnimalFactory
+{
+    public function createAnimal($type, $name): Pet
+    {
         $animal = null;
         switch ($type) {
             case 'cat':
