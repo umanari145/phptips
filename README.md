@@ -64,7 +64,7 @@ PHPに関わる小ネタ
     - utf8_text.txt utf8で保存したファイル
 
 - factory Factoryパターンについてのサンプルコード
-    - 参考 https://qiita.com/shoheiyokoyama/items/d752834a6a2e208b90ca#account%E3%82%AF%E3%83%A9%E3%82%B9
+    - 参考 https://liginc.co.jp/web/programming/php/149051
     - AnimalController factoryの呼び出し
     - AnimalFactory 実際の具体生成箇所(正しくfactory)
     - Cat.php 具象クラス 
