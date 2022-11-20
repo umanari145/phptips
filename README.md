@@ -1,6 +1,8 @@
 # phptips
 
 PHPに関わる小ネタ
+** laravelのddを採用("larapack/dd")
+
 
 - Anonymous
     - call_user_func_array.php call_user_func_arrayを使ったリフレクション
@@ -183,7 +185,10 @@ PHPに関わる小ネタ
 
 - sendgrid 
     - sendgridを使ったメールサンプル
-    
+
+- scraping
+    - scraping paquettg/php-html-parserによるPHPスクレイピング
+
 ```
 http://localhost:8080/routing/sampleAction→Controller/TopControllerのsampleActionにアクセス
 参照リンク
