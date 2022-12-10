@@ -1,7 +1,7 @@
 version: '3'
 services:
   php7:
-    container_name: phptips_php7
+    container_name: phptips_php8
     ports:
       - "8080:80"
     build:
