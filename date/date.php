@@ -68,3 +68,4 @@ $diff = $day1->diff($day2);
 var_dump($diff);
 //formatは公式を
 echo $diff->format("%R%a");
+

@@ -32,6 +32,7 @@ PHPに関わる小ネタ
 
 
 - date/date.php dateTimeを使った日付の処理全般
+- date/Carbon.php Carbonを使った日付の処理
 
 - di Diのサンプル
     - type1
