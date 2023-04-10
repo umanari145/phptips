@@ -160,7 +160,9 @@ PHPに関わる小ネタ
     - pdfgenerateor.php fpdfを使ったサンプル
     - pdfgenerateor2.php tcpdfを使ったサンプル
 
-- php8/tips PHP8のネタ(名前付き引数、オブジェクトのプロモーション、nullオペレーター)
+- php
+    - tips PHP8のネタ(名前付き引数、オブジェクトのプロモーション、nullオペレーター)
+    - operator 演算子について(三項演算子、エルビス演算子、null演算子)
 
 - redis redisのサンプル
     - redisSample.php Redisのサンブル　Redisコマンド自体はredisコンテナの中でみる
