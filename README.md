@@ -162,7 +162,7 @@ PHPに関わる小ネタ
 
 - php
     - tips PHP8のネタ(名前付き引数、オブジェクトのプロモーション、nullオペレーター)
-    - operator 演算子について(三項演算子、エルビス演算子、null演算子)
+    - operator 演算子について(三項演算子、エルビス演算子、null演算子) https://www.asobou.co.jp/blog/web/php-operator
 
 - redis redisのサンプル
     - redisSample.php Redisのサンブル　Redisコマンド自体はredisコンテナの中でみる
