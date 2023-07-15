@@ -26,6 +26,9 @@ PHPに関わる小ネタ
 - closure
     - array_convert.php clouserを使ったarray_mapの自作
 
+- collection
+    - sample.php illuminate/collectionsをつかったサンプル
+
 - csv
     - dummy.php CSVのインポート＆エクスポート
     - load.csv CSVの読み込みとハッシュ化
