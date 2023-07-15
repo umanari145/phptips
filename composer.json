@@ -18,12 +18,10 @@
         "firebase/php-jwt": "^5.2",
         "predis/predis": "^1.1",
         "google/apiclient": "^2.9",
-        "jenssegers/blade": "^1.4",
         "larapack/dd": "^1.1",
-        "illuminate/validation": "^8.31",
-        "illuminate/translation": "^8.31",
         "phpoffice/phpspreadsheet": "^1.18",
         "paquettg/php-html-parser": "*",
-        "nesbot/carbon": "*"
+        "nesbot/carbon": "*",
+        "illuminate/collections": "^9.52"
     }
 }
