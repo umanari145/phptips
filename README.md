@@ -25,7 +25,7 @@ PHP に関わる小ネタ
 
   - index.php エントリーポイントのファイル
   - composer.json composer.json
-  - buildspec.yaml buildspec
+  - buildspec.yaml CICD 時の起動ただし、場所自体はルートディレクトリに
 
 - class
 

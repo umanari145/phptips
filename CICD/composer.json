@@ -1,0 +1,6 @@
+{
+  "name": "CICD",
+  "require": {
+    "monolog/monolog": "^2.0"
+  }
+}

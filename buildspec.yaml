@@ -1,0 +1,29 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing PHP dependencies...
+      - cd ./CICD
+      - curl -sS https://getcomposer.org/installer | php
+      - php composer.phar install
+  pre_build:
+    commands:
+      - echo Running pre-build commands...
+  build:
+    commands:
+      - echo Building the project...
+      - cd ./CICD
+      - mkdir -p build
+      - cp index.php build/
+      - cp -r vendor build/ # Composer依存パッケージを含める場合
+  post_build:
+    commands:
+      - echo Build complete. Packaging files...
+      - cd ./CICD
+      - cd build
+      - zip -r ../output.zip .
+      - cd ..
+artifacts:
+  files:
+    - output.zip
