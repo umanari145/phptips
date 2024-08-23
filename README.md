@@ -21,6 +21,12 @@ PHP に関わる小ネタ
   - cached.php 静的キャッシュの使い方
   - redis.php redis を使ったキャッシュ
 
+- CICD
+
+  - index.php エントリーポイントのファイル
+  - composer.json composer.json
+  - buildspec.yaml buildspec
+
 - class
 
   - SampleClass.php クラス変数とインスタンス変数の使い分け
