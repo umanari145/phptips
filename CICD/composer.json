@@ -1,5 +1,5 @@
 {
-  "name": "cicd",
+  "name": "umanari145/cicd-project",
   "require": {
     "monolog/monolog": "^2.0"
   }
