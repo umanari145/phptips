@@ -13,14 +13,12 @@ phases:
   build:
     commands:
       - echo Building the project...
-      - cd ./CICD
       - mkdir -p build
       - cp index.php build/
       - cp -r vendor build/ # Composer依存パッケージを含める場合
   post_build:
     commands:
       - echo Build complete. Packaging files...
-      - cd ./CICD
       - cd build
       - zip -r ../output.zip .
       - cd ..
