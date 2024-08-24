@@ -24,4 +24,4 @@ phases:
       - cd ..
 artifacts:
   files:
-    - output.zip
+    - CICD/output.zip
